@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Lista de compras</title>
+</head>
+
+<body>
+  <main class="conteudo-principal">
+    <div class="grafismo-azul"></div>
+    <section class="adicionar-produto">
+      <h1 class="titulo">
+        Lista de <span class="texto-azul">compras</span>
+      </h1>
+
+      <form class="formulario">
+        <label class="campo-grupo">
+          <span class="texto-medio-azul">Produto</span>
+          <select class="produto-input" name="produto" id="produto">
+            <option value="Ovos 24  - R$ 12">Ovos(24) - R$ 12</option>
+            <option value="Banana (12) - R$ 6">Banana (12) - R$ 6</option>
+            <option value="Abobrinha (2) - R$ 23">Abobrinha (2) - R$ 23</option>
+            <option value="Tomate italiano (10) R$ 13">Tomate italiano (10) - R$ 13</option>
+            <option value="Batata Asterix (6) - R$ 75">Batata Asterix (6) - R$ 75</option>
+            <option value="Rucula - R$ 21 ">Rucula - R$ 21</option>
+            <option value="Tomate cereja - R$ 8">Tomate cereja - R$ 8</option>
+            <option value="Alho (4) R$ 2">Alho (4) - R$ 2</option>
+            <option value="Mexerica (6) - R$ 60">Mexerica (6) - R$ 60</option>
+            <option value="Grão de bico - R$ 3">Grão de bico - R$ 3</option>
+            <option value="Lentilha - R$ 3 ">Lentilha - R$ 3</option>
+            <option value="Sal - R$ 14">Sal - R$ 14</option>
+            <option value="Café - R$ 17 ">Café - R$ 17 </option>
+            <option value="Azeite p/ cozinhar - R$ 12">Azeite p/ cozinhar - R$ 12</option>
+            <option value="Pão integral - R$ 8">Pão integral - R$ 8</option>
+            <option value="Requeijão light - R$ 4">Requeijão light - R$ 4</option>
+            <option value="Mussarela - R$ 15">Mussarela - R$ 15</option>
+            <option value="Sabonete íntimo - R$ 10 ">Sabonete Íntimo - R$ 10</option>
+            <option value="Cotonetes - R$ 8">Cotonetes - R$ 8</option>
+            <option value="Refil sabão Ariel liquido - R$ 8">Refil sabão Ariel liquido - R$ 5</option>
+            <option value="Cerveja - R$ 60">Cerveja - R$ 60</option>
+          </select>
+          </div>
+        </label>
+
+        <section class="parte-inferior">
+          <label class="campo-grupo">
+            <span class="texto-medio-azul">Qtde.</span>
+            <input class="quantidade-input" id="quantidade" type="number" placeholder="100">
+          </label>
+
+          <section class="botoes-wrapper">
+            <button onclick="adicionar()" type="button" class="botao-form botao-adicionar">Adicionar</button>
+            <button onclick="limpar()" type="button" class="botao-form botao-limpar">Limpar</button>
+          </section>
+        </section>
+      </form>
+    </section>
+    <section class="carrinho">
+      <img src="./assets/carrinho-cinza.svg" alt="Imagem de um carrinho de compras cinza">
+
+      <div class="titulo-wrapper">
+        <img src="./assets/icone-carrinho.svg" alt="ícone de carrinho">
+
+        <h2 class="carrinho__titulo">Produtos no carrinho</h2>
+      </div>
+
+      <section class="carrinho__produtos" id="lista-produtos">
+        <section class="carrinho__produtos__produto">
+          <span class="texto-azul">1x</span> Celular <span class="texto-azul">R$1400</span>
+        </section>
+      </section>
+
+      <div class="divisoria"></div>
+
+      <p class="carrinho__total">
+        Total: <span class="texto-azul" id="valor-total">R$1400</span>
+      </p>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
